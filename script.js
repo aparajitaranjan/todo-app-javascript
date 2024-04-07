@@ -55,7 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     todoItem.innerHTML = `<span>${todoText}</span>`;
     editButton.innerText = "🖊";
+    editButton.classList.add("edit-button");
     deleteButton.innerText = "❌";
+    deleteButton.classList.add("delete-button");
 
     todoItem.appendChild(editButton);
     todoItem.appendChild(deleteButton);
